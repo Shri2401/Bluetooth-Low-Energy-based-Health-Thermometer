@@ -33,15 +33,15 @@ Remote patient monitoring has emerged as a crucial aspect of modern healthcare, 
 
 ## High-Level Design
 
-![Hardware block diagram]([https://github.com/Shri2401/Bluetooth-Low-Energy-based-Health-Thermometer/blob/main/questions/screenshots/Hardware_Block_Diagram.png])
+![Hardware block diagram](https://github.com/Shri2401/Bluetooth-Low-Energy-based-Health-Thermometer/blob/main/questions/screenshots/Hardware_Block_Diagram.png)
 
-![Software block diagram]([https://github.com/Shri2401/Bluetooth-Low-Energy-based-Health-Thermometer/blob/main/questions/screenshots/Software_Block_Diagram.png])
+![Software block diagram](https://github.com/Shri2401/Bluetooth-Low-Energy-based-Health-Thermometer/blob/main/questions/screenshots/Software_Block_Diagram.png)
 
 ## Server_Client Desisgn
-![GATT_Server block diagram]([https://github.com/Shri2401/Bluetooth-Low-Energy-based-Health-Thermometer/blob/main/questions/screenshots/GATT_Client_Block_Diagram.png])
+![GATT_Server block diagram](https://github.com/Shri2401/Bluetooth-Low-Energy-based-Health-Thermometer/blob/main/questions/screenshots/GATT_Client_Block_Diagram.png)
 
-![GATT_Client_block diagram]([https://github.com/Shri2401/Bluetooth-Low-Energy-based-Health-Thermometer/blob/main/questions/screenshots/GATT_Server_Block_Diagram.png])
+![GATT_Client_block diagram](https://github.com/Shri2401/Bluetooth-Low-Energy-based-Health-Thermometer/blob/main/questions/screenshots/GATT_Server_Block_Diagram.png)
 
 ## Wireless Communication Details
 
-![Wireless_block diagram]([https://github.com/Shri2401/Bluetooth-Low-Energy-based-Health-Thermometer/blob/main/questions/screenshots/Wireless_Block_Diagram.png])
+![Wireless_block diagram](https://github.com/Shri2401/Bluetooth-Low-Energy-based-Health-Thermometer/blob/main/questions/screenshots/Wireless_Block_Diagram.png)
