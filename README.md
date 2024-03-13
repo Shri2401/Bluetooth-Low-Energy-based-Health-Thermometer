@@ -45,3 +45,19 @@ Remote patient monitoring has emerged as a crucial aspect of modern healthcare, 
 ## Wireless Communication Details
 
 ![Wireless_block diagram](https://github.com/Shri2401/Bluetooth-Low-Energy-based-Health-Thermometer/blob/main/questions/screenshots/Wireless_Block_Diagram.png)
+
+## Conclusion
+In conclusion, our project aims to address the crucial need for remote patient monitoring in healthcare through the implementation of a Bluetooth Smart system with server and client models. Leveraging Bluetooth Low Energy (BLE) technology, we have designed a system capable of continuously monitoring temperature and heart rate, enabling healthcare practitioners to make informed decisions regarding patient treatment in real-time.
+
+By utilizing Blue Gecko Boards as both the server and client devices, we have successfully established an encrypted link between them, ensuring secure communication and data transfer. The server device periodically reads temperature values from an external sensor and sends them to the client only when abnormal fluctuations are detected, optimizing power consumption and data efficiency. The client device, upon receiving temperature measurements, promptly retrieves heart rate values from a sensor and updates the server with the combined data.
+
+Our project also prioritizes user experience and interface, with LCD displays providing real-time updates on device status, connection status, and measured values. LED indicators further enhance user awareness by signaling abnormal temperature and heart rate readings through visual cues.
+
+Through meticulous hardware and software integration, our system offers a reliable solution for remote patient monitoring, providing healthcare professionals with timely and accurate data to facilitate proactive patient care. With its emphasis on data security, energy efficiency, and user-friendly design, our project represents a significant step forward in the realm of IoT-enabled healthcare applications.
+
+
+
+
+
+
+
