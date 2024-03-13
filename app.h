@@ -1,0 +1,94 @@
+/***************************************************************************//**
+ * @file
+ * @brief Application interface provided to main().
+ *******************************************************************************
+ * # License
+ * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+ *******************************************************************************
+ *
+ * SPDX-License-Identifier: Zlib
+ *
+ * The licensor of this software is Silicon Laboratories Inc.
+ *
+ * This software is provided 'as-is', without any express or implied
+ * warranty. In no event will the authors be held liable for any damages
+ * arising from the use of this software.
+ *
+ * Permission is granted to anyone to use this software for any purpose,
+ * including commercial applications, and to alter it and redistribute it
+ * freely, subject to the following restrictions:
+ *
+ * 1. The origin of this software must not be misrepresented; you must not
+ *    claim that you wrote the original software. If you use this software
+ *    in a product, an acknowledgment in the product documentation would be
+ *    appreciated but is not required.
+ * 2. Altered source versions must be plainly marked as such, and must not be
+ *    misrepresented as being the original software.
+ * 3. This notice may not be removed or altered from any source distribution.
+ *
+ *
+ * Editor: Feb 26, 2022, Dave Sluiter
+ * Change: Added comment about use of .h files.
+ *
+ *
+ *
+ * Student edit: Add your name and email address here:
+ * @student    Vignesh Vadivel, Vignesh.Vadivel@Colorado.edu
+ *
+ *
+ ******************************************************************************/
+
+// Students: Remember, a header file (a .h file) defines an interface
+//           for functions defined within an implementation file (a .c file).
+//           The .h file defines what a caller (a user) of a .c file requires.
+//           At a minimum, the .h file should define the publicly callable
+//           functions, i.e. define the function prototypes. #define and type
+//           definitions can be added if the caller requires theses.
+
+#ifndef APP_H
+#define APP_H
+
+/*********************************************** LIBRARIES FROM SILABS ***********************************************/
+#include <em_core.h>
+
+/******************************************************* MACROS *******************************************************/
+// Defining energy mode //
+#define LOWEST_ENERGY_MODE 2
+// Total period in ms //
+#define LETIMER_PERIOD_MS 1000
+// Convert to secs //
+#define MILLI_SEC_TO_SECONDS     1000
+#define MICRO_SEC_TO_SECONDS     1000000
+
+#define UNDER_FLOW_INTERRUPT     1
+#define COMP1_INTERRUPT          2
+#define I2C_TRANSFER_COMPLETE    4
+#define PB0_RELEASE              8
+#define PB0_PRESS                16
+#define PB1_PRESS                32
+#define PB1_RELEASE              64
+#define CLEAR_INTERRUPT          0
+
+#define CORE_DECLARE_IRQ_STATE    CORE_irqState_t irqState
+#define CORE_ENTER_CRITICAL()     irqState = CORE_EnterCritical()
+#define CORE_EXIT_CRITICAL()      CORE_ExitCritical(irqState)
+
+typedef enum{
+  IDLE = 1,
+  WRITE_COMMAND = 2,
+  I2C_WRITE_COMPLETE = 3,
+  READ_COMMAND = 4,
+  I2C_READ_COMPLETE = 5
+}myStates;
+
+/**************************************************************************//**
+ * Application Init.
+ *****************************************************************************/
+void app_init(void);
+
+/**************************************************************************//**
+ * Application Process Action.
+ *****************************************************************************/
+void app_process_action(void);
+
+#endif // APP_H
